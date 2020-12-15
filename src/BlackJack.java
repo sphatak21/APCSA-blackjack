@@ -10,7 +10,7 @@ public class BlackJack {
     private final Scanner in;
     public BlackJack(long n) {
         this.player = new Player(n);
-        this.computer = new Player((long) (n * Math.pow(10, 6)));
+        this.computer = new Player(Integer.MAX_VALUE);
         this.in = new Scanner(System.in);
     }
     public void play() {
