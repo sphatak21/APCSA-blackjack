@@ -18,6 +18,9 @@ public class BlackJack {
         boolean startGame = true;
         while (true){
             if(startGame){
+                if(player.getChips() == 0){
+                    startGame();
+                }
                 initializeDeck();
                 computer.emptyHand();
                 player.emptyHand();
@@ -191,11 +194,4 @@ public class BlackJack {
             System.out.println("Blackjack!");
         }
     }
-
-
-
-
-
-
-
 }
